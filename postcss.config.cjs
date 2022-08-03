@@ -11,7 +11,9 @@ const config = {
   plugins: [
     importExtGlob, // must be first
     postcssImport(normalize()), // must be second
-    postcssPresetEnv,
+    postcssPresetEnv({
+      stage: 1
+    }),
     mixins,
     nested,
     cssnano({ preset: "default" })
