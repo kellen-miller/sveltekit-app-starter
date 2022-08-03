@@ -9,7 +9,7 @@ const cssnano = require("cssnano");
 const config = {
   plugins: [
     importExtGlob, // must be first
-    postcssImport(normalize()), // must be second
+    postcssImport(normalize), // must be second
     postcssPresetEnv({
       stage: 1
     }),
