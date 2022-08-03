@@ -5,9 +5,32 @@
     "checkJs": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true
-  }
+    "incremental": true,
+    "noEmit": true,
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "@": [
+        "src"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+      "$lib": [
+        "src/lib"
+      ],
+      "$lib/*": [
+        "src/lib/*"
+      ],
+      "$styles": [
+        "src/styles"
+      ],
+      "$styles/*": [
+        "src/styles/*"
+      ]
+    }
+  },
+  "resolveJsonModule": true,
+  "skipLibCheck": true,
+  "sourceMap": true,
+  "strict": true
 }
