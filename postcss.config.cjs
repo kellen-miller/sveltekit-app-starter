@@ -1,4 +1,3 @@
-const importExtGlob = require("postcss-import-ext-glob")
 const postcssImport = require("postcss-import")
 const normalize = require("postcss-normalize")
 const nesting = require("tailwindcss/nesting")
@@ -8,7 +7,6 @@ const mixins = require("postcss-mixins")
 
 const config = {
   plugins: [
-    importExtGlob, // must be first
     postcssImport(normalize), // must be second
     nesting,
     tailwindcss,

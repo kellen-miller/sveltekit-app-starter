@@ -1,4 +1,9 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import-glob "styles/**/*.pcss";
+@import "styles/typography.pcss";
+@import "styles/variables.pcss";
+@import "styles/tailwind.pcss";
+
+@layer base {
+    html {
+        font-family: "Poppins", sans-serif;
+    }
+}
