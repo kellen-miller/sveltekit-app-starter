@@ -7,9 +7,18 @@ export default defineConfig({
 		sveltekit()
 	],
 	resolve: {
-		alias: {
-			"@": path.resolve("./src"),
-			"$": path.resolve("./src/")
-		}
+		alias: [
+			{
+				find: "@",
+				replacement: path.resolve(__dirname, "src")
+			},
+			{
+				find: /\$/,
+				replacement: `${path.resolve(__dirname, "src")}/`
+			}
+		]
+	},
+	build: {
+		minify: false
 	}
 });

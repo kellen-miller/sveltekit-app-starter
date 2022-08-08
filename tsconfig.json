@@ -9,20 +9,14 @@
     "noEmit": true,
     "noUncheckedIndexedAccess": true,
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
       "$lib": [
         "src/lib"
       ],
       "$lib/*": [
         "src/lib/*"
       ],
-      "$styles": [
-        "src/styles"
-      ],
-      "$styles/*": [
-        "src/styles/*"
+      "$*": [
+        "src/*"
       ]
     }
   },
