@@ -11,7 +11,8 @@ const config = {
     switchCase()
   ],
   kit: {
-    adapter: adapter()
+	  adapter: adapter(),
+	  prerender: { default: true }
   }
 };
 
